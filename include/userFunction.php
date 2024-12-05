@@ -235,13 +235,12 @@ function wireStatus($result){
         $conn = dbConnect();
         if (isset($_SESSION['acct_no'])) {
             $acct_no = $_SESSION['acct_no'];
+            $sql = "SELECT * FROM users WHERE acct_no = :acct_no";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute([
+                'acct_no' => $acct_no
+            ]);
         }
-        $sql = "SELECT * FROM users WHERE acct_no = :acct_no";
-        $stmt = $conn->prepare($sql);
-        $stmt->execute([
-            'acct_no' => $acct_no
-        ]);
-
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         return $row[$value];
 
