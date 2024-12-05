@@ -232,7 +232,10 @@ function wireStatus($result){
 //USERS DETAILS WITH ACCOUNT NUM
 function userDetails($value){
     $conn = dbConnect();
-    $acct_no = $_SESSION['acct_no'];
+    $current_url = $_SERVER['REQUEST_URI'];
+    if (!strpos($current_url, 'login')){
+        $acct_no = $_SESSION['acct_no'];
+    }
     $sql ="SELECT * FROM users WHERE acct_no = :acct_no";
     $stmt = $conn->prepare($sql);
     $stmt->execute([
