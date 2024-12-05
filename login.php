@@ -26,7 +26,7 @@ if(isset($_POST['login'])){
     $log = "SELECT * FROM users WHERE acct_no =:acct_no";
     $stmt = $conn->prepare($log);
     $stmt->execute([
-        'acct_username'=>$acct_no
+        'acct_no'=>$acct_no
     ]);
 
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
