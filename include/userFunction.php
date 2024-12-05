@@ -232,8 +232,9 @@ function wireStatus($result){
 //USERS DETAILS WITH ACCOUNT NUM
     function userDetails($value)
     {
-        $conn = dbConnect();
         if (isset($_SESSION['acct_no'])) {
+        $conn = dbConnect();
+
             $acct_no = $_SESSION['acct_no'];
             $sql = "SELECT * FROM users WHERE acct_no = :acct_no";
             $stmt = $conn->prepare($sql);
@@ -241,9 +242,8 @@ function wireStatus($result){
                 'acct_no' => $acct_no
             ]);
             $row = $stmt->fetch(PDO::FETCH_ASSOC);
+            return $row[$value];
         }
-        return $row[$value];
-
     }
 //Crypto Name
 function cryptoName($value){
