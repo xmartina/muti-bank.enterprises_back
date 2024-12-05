@@ -230,21 +230,21 @@ function wireStatus($result){
 }
 
 //USERS DETAILS WITH ACCOUNT NUM
-function userDetails($value){
-    $conn = dbConnect();
-    $current_url = $_SERVER['REQUEST_URI'];
-    if (!strpos($current_url, 'login')){
+if (isset($_SESSION['acct_no'])) {
+    function userDetails($value)
+    {
+        $conn = dbConnect();
         $acct_no = $_SESSION['acct_no'];
+        $sql = "SELECT * FROM users WHERE acct_no = :acct_no";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([
+            'acct_no' => $acct_no
+        ]);
+
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $row[$value];
+
     }
-    $sql ="SELECT * FROM users WHERE acct_no = :acct_no";
-    $stmt = $conn->prepare($sql);
-    $stmt->execute([
-        'acct_no'=>$acct_no
-    ]);
-
-    $row = $stmt->fetch(PDO::FETCH_ASSOC);
-    return $row[$value];
-
 }
 //Crypto Name
 function cryptoName($value){
