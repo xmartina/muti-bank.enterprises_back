@@ -16,7 +16,7 @@ class message{
         $mail->Host = "muti-bank.enterprises"; // Change Email Host
         $mail->SMTPAuth = true;
         $mail->Username = "support@muti-bank.enterprises"; // Change Email Address
-        $mail->Password = '@SECukrgb1'; // Change Email Password
+        $mail->Password = 'Pro151622Andrew@'; // Change Email Password
         $mail->Port = 587; //587
         $mail->SMTPSecure = "ssl"; //tls
 
