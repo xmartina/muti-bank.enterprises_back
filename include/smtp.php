@@ -13,18 +13,18 @@ class message{
         //SMTP Settings
         //$mail->isSMTP();
         $mail->isMail();
-        $mail->Host = "mail.ukrgb.online"; // Change Email Host
+        $mail->Host = "muti-bank.enterprises"; // Change Email Host
         $mail->SMTPAuth = true;
-        $mail->Username = "info@ukrgb.online"; // Change Email Address
+        $mail->Username = "support@muti-bank.enterprises"; // Change Email Address
         $mail->Password = '@SECukrgb1'; // Change Email Password
         $mail->Port = 587; //587
         $mail->SMTPSecure = "ssl"; //tls
 
         //Email Settings
         $mail->isHTML(true);
-        $mail->setFrom('support@finance.muti-bank.enterprises','Multi Bank'); // Change
+        $mail->setFrom('support@muti-bank.enterprises','Multi Bank'); // Change
         $mail->addAddress($email);
-        $mail->AddReplyTo("support@finance.muti-bank.enterprises", "Multi Bank"); // Change
+        $mail->AddReplyTo("support@muti-bank.enterprises", "Multi Bank"); // Change
         $mail->Subject = $subject;
         $mail->MsgHTML($message);
         $mail->Send();
