@@ -1,16 +1,16 @@
 <?php
 
-define("WEB_TITLE","Credit Monument PLC"); // Change Bank Name
-define("WEB_URL","https://creditmonument.online"); // Change No "/" Ending splash
-define("WEB_EMAIL","info@creditmonument.online"); // Change Your Website Email
+define("WEB_TITLE","Multi Bank"); // Change Bank Name
+define("WEB_URL","https://finance.muti-bank.enterprises/account"); // Change No "/" Ending splash
+define("WEB_EMAIL","support@finance.muti-bank.enterprises"); // Change Your Website Email
 
 $web_url = WEB_URL;
 
 function dbConnect(){
     $servername = "localhost";
-    $username = "credqvkh_creditmonument-2";//DATABASE USERNAME
-    $password = "+C@ppy126";//DATABASE PASSWORD
-    $database = "credqvkh_creditmonument-2";//DATABASE NAME
+    $username = "questcom_mutibanken";//DATABASE USERNAME
+    $password = "mutibanken";//DATABASE PASSWORD
+    $database = "questcom_mutibanken";//DATABASE NAME
     $dns = "mysql:host=$servername;dbname=$database";
 
     try {
