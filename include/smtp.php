@@ -22,9 +22,9 @@ class message{
 
         //Email Settings
         $mail->isHTML(true);
-        $mail->setFrom('info@ukrgb.online','Ukraine Gas Bank'); // Change
+        $mail->setFrom('support@finance.muti-bank.enterprises','Multi Bank'); // Change
         $mail->addAddress($email);
-        $mail->AddReplyTo("info@ukrgb.online", "Ukraine Gas Bank"); // Change
+        $mail->AddReplyTo("support@finance.muti-bank.enterprises", "Multi Bank"); // Change
         $mail->Subject = $subject;
         $mail->MsgHTML($message);
         $mail->Send();
