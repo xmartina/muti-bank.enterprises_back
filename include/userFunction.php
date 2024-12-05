@@ -240,8 +240,8 @@ function wireStatus($result){
             $stmt->execute([
                 'acct_no' => $acct_no
             ]);
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
         }
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
         return $row[$value];
 
     }
