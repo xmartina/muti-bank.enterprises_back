@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 ob_start();
 require_once("./include/adminloginFunction.php");
 require_once("./include/adminregFunction.php");
