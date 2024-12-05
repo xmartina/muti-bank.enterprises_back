@@ -230,11 +230,12 @@ function wireStatus($result){
 }
 
 //USERS DETAILS WITH ACCOUNT NUM
-if (isset($_SESSION['acct_no'])) {
     function userDetails($value)
     {
         $conn = dbConnect();
-        $acct_no = $_SESSION['acct_no'];
+        if (isset($_SESSION['acct_no'])) {
+            $acct_no = $_SESSION['acct_no'];
+        }
         $sql = "SELECT * FROM users WHERE acct_no = :acct_no";
         $stmt = $conn->prepare($sql);
         $stmt->execute([
@@ -245,7 +246,6 @@ if (isset($_SESSION['acct_no'])) {
         return $row[$value];
 
     }
-}
 //Crypto Name
 function cryptoName($value){
     $conn = dbConnect();
