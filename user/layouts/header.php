@@ -48,7 +48,7 @@ $url_email = $page['url_email'];
 $livechat = $page['livechat'];
 $trans_limit_min = $page['trans_limit_min'];
 $trans_limit_max = $page['trans_limit_max'];
-
+$site_url = $page['site_url'];
 
 
 $viesConn="SELECT * FROM users WHERE acct_no = :acct_no";
@@ -201,7 +201,7 @@ if ($row['acct_currency'] === 'USD') {
         }
     }
     .header-logo-box{
-        background-image:url('/assets/images/logo/logo.png');
+        background-image:url('<?=$site_url?>assets/images/logo/logo.png');
         background-size:contain;
         background-repeat:no-repeat;
         height:6em;
