@@ -25,11 +25,11 @@ $sendMail = new emailMessage();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <title><?=$pageName?> - <?=$pageTitle ?> </title>
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo/favicon.png"/>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/plugins.css" rel="stylesheet" type="text/css" />
     <link href="./formcss.css" rel="stylesheet" type="text/css"/>
 
     <!-- END GLOBAL MANDATORY STYLES -->
