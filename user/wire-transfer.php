@@ -434,7 +434,7 @@ $list_us_banks = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                                 <div class="form-group mb-4 mt-4">
                                                     <label for="">Select Account Type</label>
                                                     <div class="input-group">
-                                                        <select type="button" class="btn-group bootstrap-select input-group-btn" name="acct_type"  data-width='100%'
+                                                        <select type="button" class="form-control btn-group bootstrap-select input-group-btn" name="acct_type"  data-width='100%'
                                                             required>
                                                             <option value="">Select Account Type</option>
                                                             <option value="Savings">Savings Account</option>
