@@ -119,17 +119,32 @@ $cardCheck = $cardstmt->fetch(PDO::FETCH_ASSOC);
 
 if ($row['acct_currency'] === 'USD') {
     $currency = "$";
-} elseif ($row['acct_currency'] === 'Euro') {
+} elseif ($row['acct_currency'] === 'EUR') {
     $currency = "€";
-} elseif ($row['acct_currency'] === 'Yuan') {
-    $currency = "¥";
 } elseif ($row['acct_currency'] === 'GBP') {
     $currency = "£";
-} elseif ($row['acct_currency'] === 'CAD') {
-    $currency = "¢";
+} elseif ($row['acct_currency'] === 'VND') {
+    $currency = "₫"; // Vietnam Dong symbol
+} elseif ($row['acct_currency'] === 'THB') {
+    $currency = "฿"; // Thai Baht symbol
+} elseif ($row['acct_currency'] === 'IDR') {
+    $currency = "Rp"; // Indonesian Rupiah symbol
+} elseif ($row['acct_currency'] === 'MNT') {
+    $currency = "₮"; // Mongolian Tugrik symbol
+} elseif ($row['acct_currency'] === 'MMK') {
+    $currency = "Ks"; // Myanmar Kyat symbol
+} elseif ($row['acct_currency'] === 'JPY') {
+    $currency = "¥"; // Japanese Yen symbol
+} elseif ($row['acct_currency'] === 'KHR') {
+    $currency = "៛"; // Cambodian Riel symbol
+} elseif ($row['acct_currency'] === 'DE') {
+    $currency = "€"; // Euros for Germany
+} elseif ($row['acct_currency'] === 'LAK') {
+    $currency = "₭"; // Lao Kip symbol
 }
 
 ?>
+
 
 
 <!DOCTYPE html>
