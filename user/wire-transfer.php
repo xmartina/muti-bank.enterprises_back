@@ -347,28 +347,7 @@ $list_us_banks = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                             <div class="col-md-6">
                                                 <div class="form-group mb-4 mt-4">
                                                 <div class="row">
-                                                   <!-- <div class="col-lg-6">
-                                                         <label for="" style="font-size: 12px;">Bank Name ( For US Bank Only )</label>
-                                                        <div class="input-group" id="UsSelected">
-                                                            <select name="bank_name" class='selectpicker' data-width='100%' data-live-search="true">
-                                                                <option >Select Bank</option>
-
-                                                                <?php /* foreach ($list_us_banks as $bank) {
-                                                                    $us_bank_name = $bank['acquiring_institution'];
-
-                                                                    // Skip the first option
-                                                                    if ($us_bank_name !== 'acquiring_institution') { */
-                                                                        ?>
-                                                                        <option value="<? // = htmlspecialchars($us_bank_name) ?>"><? // = htmlspecialchars($us_bank_name) ?></option>
-                                                                    <?php /* }
-                                                                } */ ?>
-
-                                                            </select>
-                                                        </div>
-                                                    </div> -->
                                                     <div class="col-md-12">
-                                                    <!-- <div class="col-lg-6">
-                                                        <label for="">Bank Name ( Non-US )</label> -->
                                                         <label for="">Bank Name</label>
                                                         <div class="input-group" id="nonUsSelected">
                                                             <input type="text" class="form-control" name="bank_name"
@@ -400,7 +379,6 @@ $list_us_banks = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                             <div class="col-md-6">
                                                 <div class="form-group mb-4 mt-4">
                                                     <label for="">Beneficiary Account Name</label>
-                                                    <?=$us_bank_name?>
                                                     <div class="input-group ">
                                                         <input type="text" class="form-control" name="acct_name"
                                                                placeholder="Beneficiary Account Name"

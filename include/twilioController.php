@@ -7,14 +7,14 @@ class twilioController
 
     public  static function sendSmsCode($number,$message_code){
 
-        $sid    = "AC2cc85f22de430e24df35a0bae8c81afa";
-        $token  = "eb9a4edefb5807f883857a729f262003";
+        $sid    = "sid_key";
+        $token  = "token_goes_here";
         $twilio = new Client($sid, $token);
 
        $message = $twilio->messages->create(
                $number, // to
                 array(
-                    "messagingServiceSid" => "MG0053bd6f7d332af5d94287e478cafefd",
+                    "messagingServiceSid" => "messagingServiceSid_goes_here",
                     "body" => $message_code
                 )
             );
