@@ -112,7 +112,7 @@ unset($_SESSION['wire_transfer'], $_SESSION['dom_transfer']);
                         </div>
 
                     </div>
-                    <div class="my-3 w-100 mx-auto d-flex justify-content-center align-items-center">
+                    <div class="my-3 w-100 mx-auto d-flex justify-content-center align-items-center" onload="startTime()">
                         <div id="clockTxt"></div>
                         <script>
                             // clock
