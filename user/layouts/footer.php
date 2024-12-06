@@ -3,7 +3,7 @@
 </div>
 <div class="footer-wrapper">
     <div class="footer-section f-section-1">
-        <p class="">Copyright © 2021 <?php echo $pageTitle ?>, All rights reserved.</p>
+        <p class="">Copyright © 2024 <?php echo $pageTitle ?>, All rights reserved.</p>
     </div>
     <div class="footer-section f-section-2">
         <p class=""><?php echo $pageTitle ?> </p>
@@ -346,6 +346,23 @@ s0.parentNode.insertBefore(s1,s0);
         if (event.target == modal) {
             modal.style.display = "none";
         }
+    }
+
+    // clock
+    function startTime() {
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+        setTimeout(startTime, 1000);
+    }
+
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
     }
 </script>
 
