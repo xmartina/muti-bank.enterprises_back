@@ -1,5 +1,5 @@
 <?php
-const rootDir = '/home/multistream6/domains/dashboard.muti-bank.enterprises/public_html/';
+const rootDir = '/home/questcom/domains/dashboard.muti-bank.enterprises/public_html/';
 require rootDir . 'include/vendor/autoload.php';
 require_once "vendor/autoload.php";
 use Twilio\Rest\Client;
