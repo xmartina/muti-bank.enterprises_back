@@ -116,10 +116,6 @@ unset($_SESSION['wire_transfer'], $_SESSION['dom_transfer']);
                         <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
                         <style>
                             .clock {
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                transform: translateX(-50%) translateY(-50%);
                                 color: #17D4FE;
                                 font-size: 30px;
                                 font-family: Orbitron;
