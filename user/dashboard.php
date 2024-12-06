@@ -113,7 +113,25 @@ unset($_SESSION['wire_transfer'], $_SESSION['dom_transfer']);
 
                     </div>
                     <div class="my-3 w-100 mx-auto d-flex justify-content-center align-items-center">
-                        <div id="txt"></div>
+                        <div id="clockTxt"></div>
+                        <script>
+                            // clock
+                            function startTime() {
+                                const today = new Date();
+                                let h = today.getHours();
+                                let m = today.getMinutes();
+                                let s = today.getSeconds();
+                                m = checkTime(m);
+                                s = checkTime(s);
+                                document.getElementById('clockTxt').innerHTML =  h + ":" + m + ":" + s;
+                                setTimeout(startTime, 1000);
+                            }
+
+                            function checkTime(i) {
+                                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                                return i;
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
