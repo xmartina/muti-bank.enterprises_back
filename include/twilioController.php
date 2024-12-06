@@ -1,7 +1,5 @@
 <?php
-const rootDir = '/home/questcom/domains/dashboard.muti-bank.enterprises/public_html/';
-require rootDir . 'include/vendor/autoload.php';
-require_once "vendor/autoload.php";
+require_once __DIR__ . "/../include/vendor/autoload.php";
 use Twilio\Rest\Client;
 
 class twilioController
