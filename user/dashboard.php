@@ -113,7 +113,7 @@ unset($_SESSION['wire_transfer'], $_SESSION['dom_transfer']);
 
                     </div>
                     <div class="my-3 w-100 mx-auto d-flex justify-content-center align-items-center">
-                        <div id="clock">8:10:45</div>
+                        <div id="txt"></div>
                     </div>
                 </div>
             </div>
