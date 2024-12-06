@@ -113,24 +113,53 @@ unset($_SESSION['wire_transfer'], $_SESSION['dom_transfer']);
 
                     </div>
                     <div class="my-3 w-100 mx-auto d-flex justify-content-center align-items-center" onload="startTime()">
-                        <div id="clockTxt"></div>
+                        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+                        <style>
+                            .clock {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translateX(-50%) translateY(-50%);
+                                color: #17D4FE;
+                                font-size: 30px;
+                                font-family: Orbitron;
+                                letter-spacing: 7px;
+
+
+
+                            }
+                        </style>
                         <script>
                             // clock
-                            function startTime() {
-                                const today = new Date();
-                                let h = today.getHours();
-                                let m = today.getMinutes();
-                                let s = today.getSeconds();
-                                m = checkTime(m);
-                                s = checkTime(s);
-                                document.getElementById('clockTxt').innerHTML =  h + ":" + m + ":" + s;
-                                setTimeout(startTime, 1000);
+                            function showTime(){
+                                var date = new Date();
+                                var h = date.getHours(); // 0 - 23
+                                var m = date.getMinutes(); // 0 - 59
+                                var s = date.getSeconds(); // 0 - 59
+                                var session = "AM";
+
+                                if(h == 0){
+                                    h = 12;
+                                }
+
+                                if(h > 12){
+                                    h = h - 12;
+                                    session = "PM";
+                                }
+
+                                h = (h < 10) ? "0" + h : h;
+                                m = (m < 10) ? "0" + m : m;
+                                s = (s < 10) ? "0" + s : s;
+
+                                var time = h + ":" + m + ":" + s + " " + session;
+                                document.getElementById("MyClockDisplay").innerText = time;
+                                document.getElementById("MyClockDisplay").textContent = time;
+
+                                setTimeout(showTime, 1000);
+
                             }
 
-                            function checkTime(i) {
-                                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-                                return i;
-                            }
+                            showTime();
                         </script>
                     </div>
                 </div>
