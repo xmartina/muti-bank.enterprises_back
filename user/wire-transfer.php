@@ -1,7 +1,7 @@
 <?php
 $pageName = "Wire Transfer";
 include_once("layouts/header.php");
-require_once("userPinfunction_2.php");
+require_once("userPinfunction.php");
 
 //List usa banks
 $list_us_banks_sql = "SELECT * FROM list_banks";
