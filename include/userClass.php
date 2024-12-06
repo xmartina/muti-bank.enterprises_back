@@ -2,7 +2,7 @@
 include 'vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 require_once('config.php');
-require_once($_SERVER['DOCUMENT_ROOT']."/account/include/smtp.php");
+require_once($_SERVER['DOCUMENT_ROOT']."/include/smtp.php");
 
 class USER{
     private $conn;
