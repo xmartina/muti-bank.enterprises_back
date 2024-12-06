@@ -1832,3 +1832,13 @@ table .badge-info, table .badge-secondary, table .badge-dark  {
 .position-inherit { position:inherit; }
 .position-initial { position:initial; }
 .position-relative { position:relative; }
+
+/*dashboard clock*/
+#clock {
+    font-size: 175px;
+    width: 900px;
+    margin: 200px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}

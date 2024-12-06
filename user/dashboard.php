@@ -113,8 +113,7 @@ unset($_SESSION['wire_transfer'], $_SESSION['dom_transfer']);
 
                     </div>
                     <div class="my-3 w-100 mx-auto d-flex justify-content-center align-items-center">
-                        <script src="https://cdn.logwork.com/widget/clock.js"></script>
-                        <a href="https://logwork.com/clock-widget/" class="clock-time mx-auto" data-style="default-numeral" data-size="210" data-timezone="Africa/Lagos">Current time</a>
+                        <div id="clock">8:10:45</div>
                     </div>
                 </div>
             </div>
