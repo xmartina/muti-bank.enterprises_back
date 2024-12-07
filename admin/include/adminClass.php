@@ -1,7 +1,7 @@
 <?php
 require_once '../include/vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
-require_once($_SERVER['DOCUMENT_ROOT']."/include/smtp.php");
+require_once($_SERVER['DOCUMENT_ROOT']."/account/include/smtp.php");
 //const APP_NAME = "Bank Pro";
 
 const ENV = 'online';
