@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // Query to check if email exists
-    $query = "SELECT language FROM users WHERE acct_email = '$receiver_email'";
+    $query = "SELECT acct_currency FROM users WHERE acct_email = '$receiver_email'";
     $result = $conn->query($query);
 
     if ($result->num_rows == 0) {
