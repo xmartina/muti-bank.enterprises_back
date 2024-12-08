@@ -9,7 +9,7 @@
 <body>
 <div class="container mt-5">
     <h2>Send Email</h2>
-    <form action="/../account/admin/send_email.php" method="POST">
+    <form action="/../account/admin/send_manuel_mail/send_email.php" method="POST">
         <div class="mb-3">
             <label for="receiverEmail" class="form-label">Receiver Email</label>
             <input type="email" class="form-control" id="receiverEmail" name="receiver_email" required>
