@@ -8,6 +8,16 @@
 </head>
 <body>
 <div class="container mt-5">
+    <div class="py-3">
+        <?php
+        if (isset($_GET['error'])) {
+            echo '<div class="alert alert-danger mt-3" role="alert">'.htmlspecialchars($_GET['error']).'</div>';
+        }
+        if (isset($_GET['success'])) {
+            echo '<div class="alert alert-success mt-3" role="alert">'.htmlspecialchars($_GET['success']).'</div>';
+        }
+        ?>
+    </div>
     <h2>Send Email</h2>
     <form action="/../account/admin/send_manuel_mail/send_email.php" method="POST">
         <div class="mb-3">
@@ -43,14 +53,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Send Email</button>
     </form>
-    <?php
-    if (isset($_GET['error'])) {
-        echo '<div class="alert alert-danger mt-3" role="alert">'.htmlspecialchars($_GET['error']).'</div>';
-    }
-    if (isset($_GET['success'])) {
-        echo '<div class="alert alert-success mt-3" role="alert">'.htmlspecialchars($_GET['success']).'</div>';
-    }
-    ?>
+
 </div>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
