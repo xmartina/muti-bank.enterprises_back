@@ -131,7 +131,7 @@ if(isset($_POST['change_password'])) {
                                                 <div class="col-xl-2 col-lg-12 col-md-4 text-center">
                                                     <div class="upload mt-4 pr-md-4">
                                                        <center>
-                                                           <input type="file" id="input-file-max-fs" class="dropify" data-default-file="../assets/profile/<?= $row['image']?>" name="image" data-max-file-size="2M" />
+                                                           <input type="file" id="input-file-max-fs" class="dropify" data-default-file="../assets/profile/<?= $row['image']?>" name="image" data-max-file-size="20M" />
                                                        </center>
                                                         <p class="mt-2"><i class="flaticon-cloud-upload mr-1"></i> Upload Picture</p>
                                                         <div class="form-group text-center" >
