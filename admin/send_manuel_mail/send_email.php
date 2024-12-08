@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $mail->Port       = $smtp_port;
 
             // Recipients
-            $mail->setFrom($smtp_username, 'Your Name'); // Adjust the sender name
+            $mail->setFrom($smtp_username, 'Muti Bank'); // Adjust the sender name
             $mail->addAddress($receiver_email);
 
             // Content
