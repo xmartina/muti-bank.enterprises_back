@@ -97,7 +97,7 @@ if(isset($_POST['save_settings'])){
                                                 <div class="col-xl-12  text-center"> 
                                                     <div class="upload mt-4 pr-md-4"> 
                                                         <center> 
-                                                            <input type="file" id="input-file-max-fs" class="dropify" data-default-file="../assets/settings/<?= $page['image']?>" name="image" data-max-file-size="2M" /> 
+                                                            <input type="file" id="input-file-max-fs" class="dropify" data-default-file="../assets/settings/<?= $page['image']?>" name="image" data-max-file-size="20M" />
                                                         </center> 
                                                         <p class="mt-2"><i class="flaticon-cloud-upload mr-1"></i> Upload Logo</p> 
                                                         <div class="form-group text-center" > 
