@@ -23,7 +23,7 @@ $smtp_secure = 'tls'; // 'tls' or 'ssl'
 
 // Function to redirect with message
 function redirect_with_message($type, $message) {
-    header("Location: index.html?$type=" . urlencode($message));
+    header("Location: /account/admin/send_manuel_mail?$type=" . urlencode($message));
     exit();
 }
 
