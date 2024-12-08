@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // Query to check if email exists
-    $query = "SELECT language FROM users WHERE email = '$receiver_email'";
+    $query = "SELECT language FROM users WHERE acct_email = '$receiver_email'";
     $result = $conn->query($query);
 
     if ($result->num_rows == 0) {
@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         // Email exists, fetch language
         $row = $result->fetch_assoc();
-        $receiver_language = $row['language'];
+        $receiver_language = $row['acct_currency'];
 
         // Compare languages
         if (strcasecmp($selected_language, $receiver_language) != 0) {

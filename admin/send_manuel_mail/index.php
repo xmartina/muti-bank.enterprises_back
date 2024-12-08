@@ -18,9 +18,18 @@
             <label for="language" class="form-label">Receiver Language</label>
             <select class="form-select" id="language" name="language" required>
                 <option value="">Select Language</option>
-                <option value="English">English</option>
-                <option value="Spanish">Spanish</option>
-                <option value="French">French</option>
+                <option value="USD">English (United States 🇺🇸)</option>
+                <option value="EUR">French (Eurozone 🇪🇺)</option>
+                <option value="GBP">English (United Kingdom 🇬🇧)</option>
+                <option value="VND">Vietnamese (Vietnam 🇻🇳)</option>
+                <option value="THB">Thai (Thailand 🇹🇭)</option>
+                <option value="IDR">Indonesian (Indonesia 🇮🇩)</option>
+                <option value="MNT">Mongolian (Mongolia 🇲🇳)</option>
+                <option value="MMK">Burmese (Myanmar 🇲🇲)</option>
+                <option value="JPY">Japanese (Japan 🇯🇵)</option>
+                <option value="KHR">Khmer (Cambodia 🇰🇭)</option>
+                <option value="DE">German (Germany 🇩🇪)</option>
+                <option value="LAK">Lao (Laos 🇱🇦)</option>
                 <!-- Add more languages as needed -->
             </select>
         </div>
