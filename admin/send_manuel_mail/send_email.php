@@ -4,18 +4,18 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 // Require Composer's autoloader
-require 'vendor/autoload.php'; // Adjust the path if necessary
+require __DIR__ .'/../../include/vendor/autoload.php'; // Adjust the path if necessary
 
 // Database credentials
 $db_host = 'localhost';
-$db_user = 'your_db_username';
-$db_pass = 'your_db_password';
-$db_name = 'email_system';
+$db_user = 'questcom_mutibanken';
+$db_pass = 'mutibanken';
+$db_name = 'questcom_mutibanken';
 
 // SMTP credentials
-$smtp_host = 'smtp.example.com';
-$smtp_username = 'your_smtp_username';
-$smtp_password = 'your_smtp_password';
+$smtp_host = 'mail.muti-bank.enterprises';
+$smtp_username = 'support@muti-bank.enterprises';
+$smtp_password = 'Pro151622Andrew@';
 $smtp_port = 587; // Typically 587 for TLS or 465 for SSL
 $smtp_secure = 'tls'; // 'tls' or 'ssl'
 
